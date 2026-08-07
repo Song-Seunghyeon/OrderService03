@@ -13,7 +13,7 @@ pipeline {
 		stage('1.자바 빌드'){
 			steps{
 				echo '메이븐으로 빌드 시작'
-				sh 'mvn clean paakage'
+				sh 'mvn clean package'
 			}
 		}
 	}
