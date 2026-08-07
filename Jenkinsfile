@@ -13,10 +13,15 @@ pipeline {
 				sh 'mvn clean package'
 			}
 		}
-        stage('2. Check     Docker') {
+        stage('2. Check Docker') {
             steps {
                 sh 'docker version'
             }
         }
+        stage('3. Docker Build') {
+            steps {
+                sh 'docker build -t order-service03-app:latest .'
+            }
+        }		                
     }
 } 
