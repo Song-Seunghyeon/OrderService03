@@ -8,7 +8,7 @@ pipeline {
 	}
     
 	stages{
-		stage('0. 자동화2 '){ steps { echo '스테이지 출발'}}
+		stage('0. 자동화2 '){ steps { echo '스테이지  출발'}}
 		
 		stage('1.자바 빌드'){
 			steps{
